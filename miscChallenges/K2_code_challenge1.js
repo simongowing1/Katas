@@ -29,6 +29,7 @@ function numberToOrdinal(n) {
     }
   }
   
+  //Tests
   numberToOrdinal(0)
   numberToOrdinal(1987)
   numberToOrdinal(51)
