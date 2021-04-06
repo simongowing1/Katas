@@ -13,7 +13,7 @@
 
 //MY SOLUTION USING A SWITCH STATEMENT
 
-function likes(names) {
+export function likes(names) {
     //initiate switch statement using the number of elements in the array as the argument
     switch(names.length){
         //if the array has no elements
@@ -53,12 +53,12 @@ function likes(names) {
   likes(['Alex', 'Jacob', 'Mark', 'Max'])
   //'Alex, Jacob and 2 others like this'
 
-//MY FIRST SOLUTION USING IF/ELSE
+// //MY FIRST SOLUTION USING IF/ELSE
 
-function likes(names) {
-    if (names.length === 0) {  }
-    else if (names.length === 1) {return `${names} likes this`}
-    else if (names.length === 2) {return `${names[0]} and ${names[1]} like this`}
-    else if (names.length === 3) {return `${names[0]}, ${names[1]} and ${names[2]} like this`}
-    else if (names.length > 3) {return `${names[0]}, ${names[1]} and ${names.length-2} others like this`}
-  }
+// function likes(names) {
+//     if (names.length === 0) {  }
+//     else if (names.length === 1) {return `${names} likes this`}
+//     else if (names.length === 2) {return `${names[0]} and ${names[1]} like this`}
+//     else if (names.length === 3) {return `${names[0]}, ${names[1]} and ${names[2]} like this`}
+//     else if (names.length > 3) {return `${names[0]}, ${names[1]} and ${names.length-2} others like this`}
+//   }

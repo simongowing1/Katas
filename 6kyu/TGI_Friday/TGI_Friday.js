@@ -11,7 +11,7 @@
 
 // For example, between 1901 and 2000, a month ends on Friday 171 times.
 
-function lastDayIsFriday(initialYear, endYear) {
+export function lastDayIsFriday(initialYear, endYear) {
 // totalFridays is the counter
     let totalFridays = 0;
 
