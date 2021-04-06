@@ -30,20 +30,59 @@
 
 // Good luck!
 
+const MORSE_CODE = { 
+  '.-':     'A',
+  '-...':   'B',
+  '-.-.':   'C',
+  '-..':    'D',
+  '.':      'E',
+  '..-.':   'F',
+  '--.':    'G',
+  '....':   'H',
+  '..':     'I',
+  '.---':   'J',
+  '-.-':    'K',
+  '.-..':   'L',
+  '--':     'M',
+  '-.':     'N',
+  '---':    'O',
+  '.--.':   'P',
+  '--.-':   'Q',
+  '.-.':    'R',
+  '...':    'S',
+  '-':      'T',
+  '..-':    'U',
+  '...-':   'V',
+  '.--':    'W',
+  '-..-':   'X',
+  '-.--':   'Y',
+  '--..':   'Z',
+  '.----':  '1',
+  '..---':  '2',
+  '...--':  '3',
+  '....-':  '4',
+  '.....':  '5',
+  '-....':  '6',
+  '--...':  '7',
+  '---..':  '8',
+  '----.':  '9',
+  '-----':  '0',
+};
 
-decodeMorse = function(morseCode){
-    splitString = morseCode
+export function decodeMorse(morseCode){
+ 
+    let splitString = morseCode
     // remove unnecessary white space from the beginning and end of strings  
     .trim()
     // split the morseCode variable into an array, using single or double spaces as the splitter
     .split(/  | /);
     // map through the array
-    translatedArray = splitString.map(letter =>
+    let translatedArray = splitString.map(letter =>
     // return either the morse_code translation or a space
        MORSE_CODE[letter] || " "
      )
     //join the translated array into a translated string with no spaces ('')
-    translatedString = translatedArray.join('')
+    let translatedString = translatedArray.join('')
     //return the translated string
    return translatedString
  }
