@@ -1,0 +1,26 @@
+{
+  "name": "Katas",
+  "version": "1.0.0",
+  "description": "All my kata solutions from Codewars, HackerRank and other coding challenges.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simongowing1/Katas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simongowing1/Katas/issues"
+  },
+  "homepage": "https://github.com/simongowing1/Katas#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "babel-preset-jest": "^26.6.2",
+    "jest": "^26.6.3"
+  }
+}
