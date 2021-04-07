@@ -1,7 +1,6 @@
 import {likes} from './Who_likes_it'
 
 describe('Who_likes_it', () => {
-    describe('', () => {
         it('empty array returns "no one likes this"', () => {
             const array = []
             expect(likes(array)).toEqual('no one likes this')
@@ -22,7 +21,6 @@ describe('Who_likes_it', () => {
             const array = ['Alex', 'Jacob', 'Mark', 'Max']
             expect(likes(array)).toEqual('Alex, Jacob and 2 others like this')
         })
-    })
 })
 
 likes([])
