@@ -1,6 +1,7 @@
-//Which are in?
+// Which are in?
 
-// Given two arrays of strings a1 and a2 return a sorted array r in lexicographical order of the strings of a1 which are substrings of strings of a2.
+// Given two arrays of strings a1 and a2 return a sorted array r in lexicographical order
+// of the strings of a1 which are substrings of strings of a2.
 
 // #Example 1: a1 = ["arp", "live", "strong"]
 
@@ -22,56 +23,55 @@
 // Beware: r must be without duplicates.
 // Don't mutate the inputs.
 
-
-function inArray(array1,array2){
-    //declare an empty array
-    let r = [];
-    //loop through array2
-    array2.forEach(array2String => {
-        //for each element in array2, loop through array1
-        array1.forEach(array1String => {
-            //if the element of array2 contains the element of array1String
-            if (array2String.includes(array1String) && !r.includes(array1String)) {
-                //push the element from array1 into the empty array
-                r.push(array1String)
-            }
-        })
-      })
-      //return the contents of the array, sorted in alphabetical order
-      return r.sort()
+function inArray(array1, array2) {
+  // declare an empty array
+  const r = [];
+  // loop through array2
+  array2.forEach((array2String) => {
+    // for each element in array2, loop through array1
+    array1.forEach((array1String) => {
+      // if the element of array2 contains the element of array1String
+      if (array2String.includes(array1String) && !r.includes(array1String)) {
+        // push the element from array1 into the empty array
+        r.push(array1String);
+      }
+    });
+  });
+  // return the contents of the array, sorted in alphabetical order
+  return r.sort();
 }
-  
-  a2 = ['have',
-    '1.9.2.',
-    'that',
-    'best',
-    'sample;',
-    'pointed',
-    'for',
-    'Ruby',
-    'Ruby,',
-    'the',
-    'you',
-    '(mladen\'s',
-    'you',
-    'In',
-    'answer',
-    'out',
-    'updated',
-    'glad',
-    'I',
-    'browse',
-    'a',
-    'is',
-    'ruby-doc.',
-    '(since',
-    'am',
-    'have',
-    'to',
-    'known',
-    'should',
-    'your',
-    'questions' ]
-  
-  a1 = ['he', 'omm', '1.9', 'pini', 'ou', 'by', 've', 'oint', 'wh']
-  inArray(a1, a2)
+
+const a2 = ['have',
+  '1.9.2.',
+  'that',
+  'best',
+  'sample;',
+  'pointed',
+  'for',
+  'Ruby',
+  'Ruby,',
+  'the',
+  'you',
+  '(mladen\'s',
+  'you',
+  'In',
+  'answer',
+  'out',
+  'updated',
+  'glad',
+  'I',
+  'browse',
+  'a',
+  'is',
+  'ruby-doc.',
+  '(since',
+  'am',
+  'have',
+  'to',
+  'known',
+  'should',
+  'your',
+  'questions'];
+
+const a1 = ['he', 'omm', '1.9', 'pini', 'ou', 'by', 've', 'oint', 'wh'];
+inArray(a1, a2);
