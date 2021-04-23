@@ -18,7 +18,7 @@ function spinWords(string) {
   // split the string into an array
   const wordsArray = string.split(' ');
   // iterate over the array
-  for (let i = 0; i < wordsArray.length; i++) {
+  for (let i = 0; i < wordsArray.length; i += 1) {
     // if length of the value is longer than 5 letters, return spunWord
     if (wordsArray[i].length >= 5) {
       wordsArray[i] = wordsArray[i].split('').reverse().join('');
