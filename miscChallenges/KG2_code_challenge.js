@@ -1,3 +1,5 @@
+/* eslint-disable import/prefer-default-export */
+
 // create smoothie as a data structure:
 // smoothie is an object of arrays
 // the name of the smoothie is the key, with an array of ingredients
@@ -11,7 +13,7 @@ const smoothie = {
   'Just Desserts': ['banana', 'ice cream', 'chocolate', 'peanut', 'cherry'],
 };
 
-function ingredients(order) {
+export function ingredients(order) {
   // create a constant array by splitting the argument string
   // index 0 is the name of the smoothie, followed by the ingredients to be removed
   const smoothieOrder = order.split(',-');
