@@ -1,4 +1,5 @@
-function maskify(creditCard) {
+/* eslint-disable import/prefer-default-export */
+export function maskify(creditCard) {
   // if the length of creditCard argument is less than 6 characters,
   if (creditCard.length < 6) {
     // return just the argument
@@ -16,13 +17,3 @@ function maskify(creditCard) {
     // return the three variables assembled in the correct order
   return `${firstCharacter}${middleCharacters}${lastFourCharacters}`;
 }
-
-// TESTS
-maskify('5512103073210694');
-// '5###########0694'
-maskify('54321');
-// '54321'
-maskify('3456JOEEXOTICxxx59');
-// '3###JOEEXOTICxxx59'
-maskify('5512-1030-7321-0694');
-// '5###-####-####-0694'
