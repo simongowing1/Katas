@@ -1,26 +1,5 @@
 /* eslint-disable import/prefer-default-export */
 
-// MY ORIGINAL SOLUTION
-
-// the problem is that this does not work with very long numbers
-// it times-out while looping over the given arguments
-// so I need to find a new solution...
-
-// export function scramble(str1, str2) {
-//   const scrambledArray = str1.split('');
-//   const wordArray = str2.split('');
-//   const lettersInArray = [];
-//   wordArray.forEach((letter) => {
-//     if (scrambledArray.includes(letter)) {
-//       scrambledArray.splice(scrambledArray.indexOf(letter), 1);
-//       lettersInArray.push(letter);
-//     }
-//   });
-//   if (lettersInArray.join('') === wordArray.join('')) {
-//     return true;
-//   } return false;
-// }
-
 // REVISED SOLUTION
 
 export function scramble(str1, str2) {
@@ -45,7 +24,7 @@ export function scramble(str1, str2) {
     // for each letter in the array we check whether its value in the object
     // if the value is more than 0
     if (str1Object[letter] > 0) {
-    // add the letter to the end of the lettersInStr1 array
+      // add the letter to the end of the lettersInStr1 array
       lettersInStr1.push(letter);
       // and remove one from the value in the object
       str1Object[letter] -= 1;
@@ -55,3 +34,24 @@ export function scramble(str1, str2) {
   // else return false
   return lettersInStr1.join('') === str2;
 }
+
+// MY ORIGINAL SOLUTION
+
+// the problem is that this does not work with very long numbers
+// it times-out while looping over the given arguments
+// so I need to find a new solution...
+
+// export function scramble(str1, str2) {
+//   const scrambledArray = str1.split('');
+//   const wordArray = str2.split('');
+//   const lettersInArray = [];
+//   wordArray.forEach((letter) => {
+//     if (scrambledArray.includes(letter)) {
+//       scrambledArray.splice(scrambledArray.indexOf(letter), 1);
+//       lettersInArray.push(letter);
+//     }
+//   });
+//   if (lettersInArray.join('') === wordArray.join('')) {
+//     return true;
+//   } return false;
+// }
