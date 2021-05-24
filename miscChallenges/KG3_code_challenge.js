@@ -1,4 +1,6 @@
-function dirReduc(arr) {
+/* eslint-disable import/prefer-default-export */
+
+export function dirReduc(arr) {
   // declare new stack, which is an empty array
   const stack = [];
   // iterate over the direction array (each current value is 'direction')
@@ -51,14 +53,14 @@ function dirReduc(arr) {
 
 // TESTS
 
-dirReduc(['NORTH', 'SOUTH', 'SOUTH', 'EAST', 'WEST', 'NORTH', 'WEST']);
-// ["WEST"])
+// dirReduc(['NORTH', 'SOUTH', 'SOUTH', 'EAST', 'WEST', 'NORTH', 'WEST']);
+// // ["WEST"])
 
-dirReduc(['NORTH', 'WEST', 'SOUTH', 'EAST']);
-// //["NORTH", "WEST", "SOUTH", "EAST"])
+// dirReduc(['NORTH', 'WEST', 'SOUTH', 'EAST']);
+// // //["NORTH", "WEST", "SOUTH", "EAST"])
 
-dirReduc(['NORTH', 'SOUTH', 'EAST', 'WEST', 'EAST', 'WEST']);
-// [])
+// dirReduc(['NORTH', 'SOUTH', 'EAST', 'WEST', 'EAST', 'WEST']);
+// // [])
 
-dirReduc(['NORTH', 'SOUTH', 'WEST']);
-// ['WEST']
+// dirReduc(['NORTH', 'SOUTH', 'WEST']);
+// // ['WEST']
