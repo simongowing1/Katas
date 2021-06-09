@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 /* eslint-disable import/prefer-default-export */
 
 // REFACTORED SOLUTION:
