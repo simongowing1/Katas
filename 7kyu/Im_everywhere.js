@@ -1,6 +1,10 @@
 // https://www.codewars.com/kata/6097a9f20d32c2000d0bdb98/train/javascript/60c0fcf3fcfa030028024ff9
 
 // REFACTORED SOLUTION
+// The initial solution used .match() instead of .split() to count the number of vowels / consonants
+// This returned a ’TypeError: Cannot read property ‘length’ of null' in the 'Random tests'
+// So match was returning null rather than an array of the results
+// I have more experience using the split() method, which is a little blunter than match()
 
 function i(word) {
   // declare variable of the number of vowels in the string
