@@ -16,7 +16,7 @@ const obj = {
   },
 };
 
-Object.prototype.hash = function (string) {
+function hash(string) {
   // declare a variable with the object as a value
   let accValue = obj;
   // declare a variable with no value to contain the final value (answer)
@@ -43,7 +43,7 @@ Object.prototype.hash = function (string) {
   }
   // Return final valuegit st
   return finalValue;
-};
+}
 
 // obj.hash('person.name'); // 'joe'
 // obj.hash('person.history.bio'); // { funFact: 'I like fishing.' }
