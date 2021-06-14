@@ -15,10 +15,9 @@ function sortArray(array) {
       return number;
     }
     // if the number is odd
-    // return the next value from the odd Array
-    // splice also removes that number from the array
-    // 'Number()' turns it into a number rather than a single value array
-    return Number(oddArray.splice(0, 1));
+    // return index[0] from the odd Array
+    // shift also removes the first index in prep for the next iteration
+    return oddArray.shift();
   });
   // return sortedArray
   return sortedArray;

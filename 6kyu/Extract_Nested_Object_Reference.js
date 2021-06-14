@@ -24,7 +24,7 @@ function hash(string) {
   // declare a variable of the string split into indivdual arguments
   const argumentArray = string.split('.');
   // iterate through the array
-  for (let i = 0; i < argumentArray.length; i++) {
+  for (let i = 0; i < argumentArray.length; i += 1) {
     // declare a variable which is the value of the current key in the object
     const currentValue = accValue[argumentArray[i]];
     // if there is a value
