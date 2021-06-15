@@ -1,4 +1,6 @@
-const list = {
+/* eslint-disable import/prefer-default-export */
+
+export const list = {
   data: 1,
   next: {
   	data: 'hello',
@@ -18,7 +20,7 @@ const list = {
   },
 };
 
-function getLastNDataValues(list, n) {
+export function getLastNDataValues(list, n) {
   // declare the initial value to be the object
   let initialValue = list;
   // declare a blank array
