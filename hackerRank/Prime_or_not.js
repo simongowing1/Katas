@@ -18,7 +18,7 @@ export function isPrime(n) {
     }
   }
   if (primeOrNot.false) {
-    return Math.min[0];
+    return divisors[0];
   }
   return 1;
 }
