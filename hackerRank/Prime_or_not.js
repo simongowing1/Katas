@@ -1,5 +1,9 @@
-// Incorrect solution
-function isPrime(n) {
+/* eslint-disable import/prefer-default-export */
+
+// Solution times-out for larger numbers
+// Must refactor...
+
+export function isPrime(n) {
   const divisors = [];
   const primeOrNot = {};
   if (n === 2) {
