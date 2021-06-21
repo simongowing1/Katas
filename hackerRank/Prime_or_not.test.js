@@ -21,11 +21,25 @@ describe('isPrime', () => {
       expect(result).toEqual(3);
     });
   });
-  describe('when number is more than 3 digits', () => {
-    it('returns the common directory path', () => {
+  describe('when number is not prime and longer than 3 digits', () => {
+    it('returns the lowest divisor (larger than 1)', () => {
       const num = 6001;
       const result = isPrime(num);
       expect(result).toEqual(17);
+    });
+  });
+  describe('when number is not prime and longer than 4 digits', () => {
+    it('returns the lowest divisor (larger than 1)', () => {
+      const num = 34559;
+      const result = isPrime(num);
+      expect(result).toEqual(7);
+    });
+  });
+  describe('when number is not prime and longer than 5 digits', () => {
+    it('returns the lowest divisor (larger than 1)', () => {
+      const num = 666666;
+      const result = isPrime(num);
+      expect(result).toEqual(2);
     });
   });
 });
