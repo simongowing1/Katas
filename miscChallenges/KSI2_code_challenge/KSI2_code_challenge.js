@@ -1,17 +1,17 @@
 /* eslint-disable import/prefer-default-export */
 
-export const list = {
+export const listObject = {
   data: 1,
   next: {
-  	data: 'hello',
+    data: 'hello',
     next: {
-    	data: 1.12,
+      data: 1.12,
       next: {
-      	data: 199,
+        data: 199,
         next: {
-        	data: 'Klarna',
+          data: 'Klarna',
           next: {
-          	data: '$',
+            data: '$',
             next: null,
           },
         },
